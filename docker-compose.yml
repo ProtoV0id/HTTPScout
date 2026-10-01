@@ -1,0 +1,8 @@
+services:
+  httpscout:
+    build: .
+    container_name: httpscout
+    restart: unless-stopped
+
+    env_file:
+      - .env
